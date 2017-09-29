@@ -1,0 +1,22 @@
+/*body {
+  background-color: #F7F7F7;
+}*/
+
+.container {
+  width: 100vw;
+  max-width: 1450px;
+  padding: 0px;
+}
+
+.navbar {
+  margin: 0px;
+}
+
+.name, .title {
+  text-align: center;
+}
+
+.hero {
+  height: 80vh;
+  background-color: #F7F7F7;
+}
