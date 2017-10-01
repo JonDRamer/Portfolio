@@ -15,6 +15,11 @@ ul {
   list-style-type: none;
 }
 
+.bwwmc {
+  width: 100%;
+  height: 700px;
+}
+
 .container {
   width: 100vw;
   max-width: 1450px;
@@ -31,9 +36,8 @@ ul {
   background-color: #F7F7F7;
 }
 
-iframe {
-  width: 100%;
-  height: 700px;
+.learnMore {
+  text-align: center;
 }
 
 .navbar {
@@ -47,6 +51,11 @@ iframe {
 
 .projectTitle {
   text-align: center;
+}
+
+.simon {
+  width: 100%;
+  height: 700px;
 }
 
 .skill {
