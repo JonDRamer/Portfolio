@@ -23,13 +23,13 @@ ul {
   background-color: #F7F7F7;
 }
 
-.bwwmcScreenshot {
+.screenshot {
   height: 200px;
   margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 10vh;
 }
 
-.bwwmcScreenshotContainer {
+.screenshotContainer {
   display: flex;
   justify-content: center;
   align-items: center;
