@@ -5,6 +5,7 @@ $('document').ready((event) => {
   });
 
   let headerClipboard = new Clipboard('.headerCopyEmail');
+  let hiddenHeaderClipboard = new Clipboard('.hiddenHeaderCopyEmail');
   let hiddenFooterClipboard = new Clipboard('.hiddenFooterCopyEmail');
   let footerClipboard = new Clipboard('.footerCopyEmail');
 
@@ -20,6 +21,20 @@ $('document').ready((event) => {
         $("#headerEmailToolTip").tooltip('hide');
       }, 1000)
   });
+
+  hiddenHeaderClipboard.on('success', function(e) {
+      e.clearSelection();
+      $("#hiddenHeaderEmailToolTip").tooltip({
+        title: "Email Copied",
+        placement: "top",
+        trigger: "click"
+      });
+      $("#hiddenHeaderEmailToolTip").tooltip('show');
+      setTimeout(()=> {
+        $("#hiddenHeaderEmailToolTip").tooltip('hide');
+      }, 1000)
+  });
+
   hiddenFooterClipboard.on('success', function(e) {
       e.clearSelection();
       $("#hiddenFooterEmailToolTip").tooltip({
@@ -32,6 +47,7 @@ $('document').ready((event) => {
         $("#hiddenFooterEmailToolTip").tooltip('hide');
       }, 1000)
   });
+
   footerClipboard.on('success', function(e) {
       e.clearSelection();
       $("#footerEmailToolTip").tooltip({
@@ -44,4 +60,5 @@ $('document').ready((event) => {
         $("#footerEmailToolTip").tooltip('hide');
       }, 1000)
   });
+
 });
