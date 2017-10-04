@@ -4,17 +4,44 @@ $('document').ready((event) => {
     $('[data-toggle="tooltip"]').tooltip()
   });
 
-  let clipboard = new Clipboard('.copyEmail');
+  let headerClipboard = new Clipboard('.headerCopyEmail');
+  let hiddenFooterClipboard = new Clipboard('.hiddenFooterCopyEmail');
+  let footerClipboard = new Clipboard('.footerCopyEmail');
 
-  clipboard.on('success', function(e) {
+  headerClipboard.on('success', function(e) {
       e.clearSelection();
-      $("#emailToolTip").tooltip({
+      $("#headerEmailToolTip").tooltip({
         title: "Email Copied",
-        placement: "top"
+        placement: "bottom",
+        trigger: "click"
       });
-      $("#emailToolTip").tooltip('show');
+      $("#headerEmailToolTip").tooltip('show');
       setTimeout(()=> {
-        $("#emailToolTip").tooltip('hide');
+        $("#headerEmailToolTip").tooltip('hide');
+      }, 1000)
+  });
+  hiddenFooterClipboard.on('success', function(e) {
+      e.clearSelection();
+      $("#hiddenFooterEmailToolTip").tooltip({
+        title: "Email Copied",
+        placement: "top",
+        trigger: "click"
+      });
+      $("#hiddenFooterEmailToolTip").tooltip('show');
+      setTimeout(()=> {
+        $("#hiddenFooterEmailToolTip").tooltip('hide');
+      }, 1000)
+  });
+  footerClipboard.on('success', function(e) {
+      e.clearSelection();
+      $("#footerEmailToolTip").tooltip({
+        title: "Email Copied",
+        placement: "top",
+        trigger: "click"
+      });
+      $("#footerEmailToolTip").tooltip('show');
+      setTimeout(()=> {
+        $("#footerEmailToolTip").tooltip('hide');
       }, 1000)
   });
 });
