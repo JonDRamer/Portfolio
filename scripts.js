@@ -5,9 +5,9 @@ $('document').ready((event) => {
       console.log("Tooltips enabled");
   });
 
-  let clipboard = new Clipboard('.copyEmail');
+  let Clipboard = new Clipboard('.copyEmail');
 
-  clipboard.on('success', function(e) {
+  Clipboard.on('success', function(e) {
       e.clearSelection();
       $("#emailToolTip").tooltip({
         title: "Email Copied",
