@@ -2,7 +2,6 @@ $('document').ready((event) => {
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-      console.log("Tooltips enabled");
   });
 
   let clipboard = new Clipboard('.copyEmail');
