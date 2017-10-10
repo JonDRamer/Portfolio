@@ -71,6 +71,7 @@ ul {
 
 .learnMore {
   text-align: center;
+  cursor: pointer;
 }
 
 .navbar {
