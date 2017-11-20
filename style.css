@@ -27,6 +27,23 @@ ul {
   list-style-type: none;
 }
 
+.blogs {
+  margin: 20px;
+}
+
+.blog-content {
+  margin-top: 5vh;
+}
+
+.blogImage {
+  border-radius: 5px;
+  box-shadow: 2px 3px 12px -1px rgba(0, 0, 0, 0.75);
+}
+
+.blog-item {
+  padding: 20px;
+}
+
 .grayContainer {
   background-color: #F7F7F7;
 }

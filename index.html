@@ -12,7 +12,8 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="./dateFormat.min.js" charset="utf-8"></script>
   <!-- Tether for Tooltips -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css" />
   <!-- Latest compiled and minified JavaScript -->
@@ -174,7 +175,7 @@
             <h4>Bow Wow Wheres My Chow?</h4>
           </div>
           <div class="modal-body">
-            1. Click <a target="_blank" href="https://github.com/JonDRamer/bwwmc">here</a> to view the Readme/source code for this project or <a target="_blank" href="https://bwwmc.herokuapp.com/">here</a> to see the deployed version.
+            1. Click <a target="_blank" href="https://github.com/JonDRamer/BWWMC">here</a> to view the Readme/source code for this project or <a target="_blank" href="https://bwwmc.herokuapp.com/">here</a> to see the deployed version.
           </div>
           <div class="modal-body">
             2. Click <a target="_blank" href="https://medium.com/@JonRamer/day-45-day-1-of-project-week-91c72e9c2470">here</a> to read the blogs I wrote while I was building this app.
@@ -228,6 +229,12 @@
       <h2 class="projectTitle">Simon</h2>
       <a class="col-xs-12" data-toggle="modal" data-target=".simon-modal-lg"><h3 class="learnMore">Learn More</a>
       <iframe class="simon" src="https://retrosimon.herokuapp.com/" frameborder="0"></iframe>
+    </section>
+
+    <!-- Recent Blog Posts -->
+    <section class=" blogs row" >
+      <h2 class="projectTitle">Recent Blog Posts</h2>
+      <div id="jsonContent"></div>
     </section>
 
     <footer>
